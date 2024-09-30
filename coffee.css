@@ -21,7 +21,6 @@
     overflow-x: hidden;
     padding-top: 9rem;
     scroll-behavior: smooth;
-
 }
 
 .menu-icon{
@@ -48,6 +47,8 @@ html::-webkit-scrollbar{
  }
  body{
     background:var(--bg);
+    position: relative;
+    overflow-x: hidden;
  }
  .header{
     background: var(--bg);
@@ -179,13 +180,14 @@ html::-webkit-scrollbar{
 }
 
 .f-sec{
-   background: url('https://javanw.com/assets/images/home-img.jpeg') no-repeat;
+   background: url('./home-img.jpeg') no-repeat;
    background-size: cover;
    background-position: center;
    height: 100vh;
    color: #fff;
    display: flex;
    align-items: flex-start;
+   padding: 1rem;
 }
 .f-sec h1 {
    font-size: 60px;
@@ -228,6 +230,7 @@ html::-webkit-scrollbar{
    display: flex;
    gap: 1rem;
    align-items: center;
+   padding: 1rem;
 }
 
 .btn1{
@@ -249,7 +252,7 @@ html::-webkit-scrollbar{
     place-content: center;
     max-width: 100rem;
     margin: auto;
-
+    padding: 1rem;
 }
 
 .box{
@@ -338,6 +341,7 @@ ion-icon{
 }
 .review{
    margin-top: 5rem;
+   padding: 1rem;
 
 }
 .review .box-container .box .Users {
@@ -423,7 +427,7 @@ ion-icon{
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr)) ;
    gap:2.5rem;
-   padding: 15rem;
+   padding: 1rem;
    
 }
 .blogs .box-container .box{
