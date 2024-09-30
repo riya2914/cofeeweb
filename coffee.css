@@ -14,7 +14,7 @@
     outline: none;border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: .2% linear;
+    transition: .2s all linear;
 }
  html{
     font-size: 62.5%;
@@ -299,10 +299,10 @@ ion-icon{
    background: var(--main-color);
 }
 .products .box-container .box .image{
-   padding: 1.5rem 0;
+   padding: 3.5rem 0;
 }
 .products .box-container .box .image{
-   height: 1.5rem 0;
+   height: 3.5rem 0;
 }
 .products .box-container .box .image img{
    height: 25rem;
@@ -419,8 +419,113 @@ ion-icon{
 #contact form{
    width: 50%;
 }
+.blogs .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr)) ;
+   gap:2.5rem;
+   padding: 15rem;
+   
+}
+.blogs .box-container .box{
+   border: var(--border);
+}
+.blogs .box-container .box .image{
+   height: 25rem;
+   overflow: hidden;
+   width:100%;
+   display:flex;
+}
+.blogs .box-container .box .image img{
+   height:25rem;
+   object-fit: cover;
+   width:100%;
+}
+.blogs .box-container .box:hover .image img{
+   transform:scale(1.2) ;
+}
+.blogs .box-container .box .contactcoffe{
+   padding: 3rem;
+}
+.blogs .box-container .box .contactcoffe .title{
+   font-size: 2.5rem;
+   line-height: 1.5;
+   color: #fff;
+}
+.blogs .box-container .box .contactcoffe .title:hover{
+   color: var(--main-color);
+}
+.blogs .box-container .box .contactcoffe .sanp{
+   color: var(--main-color);
+   display: block;
+   padding-top: 1rem;
+   font-size:2rem ;
+}
+.blogs .box-container .box .contactcoffe p{
+   font-size: 1.6rem;
+   line-height: 1.8;
+   color: #ccc;
+   padding: 1rem 0;
+}
+.blogs .box-container .box button{
+   padding: 1rem;
+   color:#fff;
+   background-color: #cd8e62;
+}
+.footer{
+   background: var(--black);
+   text-align: center;
+}
+.footer .share{
+   padding:2rem 0 ;
+}
+.footer .share a{
+   color: var(--main-color);
+    border: var(--border);
+    margin: 1rem;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 1rem;
+    transition: .7s all ease;
+}
+.footer .share a:hover{
+   background-color: var(--main-color);
+}
+.footer .link{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   padding: 2rem 0;
+   gap:1rem ;
+}
+.footer .link a{
+   padding: 2rem 2rem;
+   color: #fff;
+   border: var(--border);
+   font-size:2rem ;
+}
+.footer .link a:hover{
+   background: var(--main-color);
+}
+.footer .credit{
+   font-size: 2rem;
+   color: #fff;
+   font-weight:lighter ;
+   padding: 1.5rem;
+}
+.footer .credit .sanp{
+   color: var(--main-color);
+}
 
-
+ .menu .box img{
+   width: 100%;
+   height: auto;
+}
+.menu .box, .blogs .box{
+   padding: 1rem;
+}
+.menu .box h3{
+   font-size: 20px;
+}
 
 
 
